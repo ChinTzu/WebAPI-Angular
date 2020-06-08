@@ -1,0 +1,13 @@
+﻿{
+  "profiles": {
+    "MvcClient": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "http://localhost:7000",
+      "applicationUrl": "https://localhost:7001;http://localhost:7000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
