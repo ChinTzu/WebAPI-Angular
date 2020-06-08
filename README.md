@@ -10,9 +10,9 @@ The solution is organized in three parts, the first one is the server side that 
 
 After getting the code execute the following commands for each project:
 
-SimpleNote.Api : i) update-database ii)dotnet
+SimpleNote.Api : i) update-database ii)dotnet run
 
-SimpleNote.Idp : i)dotnet
+SimpleNote.Idp : i)dotnet run
 
 Angular : i) npm install ii) ng serve
 
