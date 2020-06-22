@@ -1,7 +1,8 @@
 # WebAPI-Angular
 This is a simple note-taking app with asp.net core 3.0 web API and angular 8.
 
-The application comes with Identity server open OIDC, pagination, hateoas, vendor specific media type, data shaping, custom validation, etc.
+The application comes with Identity server open OIDC, pagination, hateoas, vendor specific media type, data shaping, custom validation, etc. Please visit the wiki for more details.
+
 
 Server and Client are completely seperated.
 
