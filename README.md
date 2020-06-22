@@ -5,7 +5,7 @@ The application comes with Identity server open OIDC, pagination, hateoas, vendo
 
 Server and Client are completely seperated.
 
-Please visit the wiki for more details.
+Please visit the Wiki of this project for more details.
 
 ### Project Organization
 The solution is organized in three parts, the first one is the server side that consists of a collection of .Net Core Web APIs that access SQLite database through Entity Framework Core. The second part is Identity server 4 as an OpenID-Connect Authentication server. The third part is an Angular 8 single page application that manages all the user interactions and calls the .Net Web APIs.
