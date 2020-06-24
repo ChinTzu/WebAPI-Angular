@@ -1,0 +1,14 @@
+<mat-card class="note-tile">
+  <mat-card-header class="note-tile-header">
+    <mat-card-title [routerLink]="['/note/note-detail', note.id]">
+      <b>{{ note.title }}</b>
+    </mat-card-title>
+    <mat-card-subtitle
+      >{{ note.updateTime | date: "medium" }} by
+      {{ note.username }}</mat-card-subtitle
+    >
+  </mat-card-header>
+  <!-- <mat-card-content>
+        
+      </mat-card-content> -->
+</mat-card>

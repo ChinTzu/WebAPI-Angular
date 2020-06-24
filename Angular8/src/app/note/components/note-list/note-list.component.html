@@ -1,0 +1,12 @@
+<button
+  mat-fab
+  color="warn"
+  class="add-fab"
+  [routerLink]="'/note/note-add'"
+  *ngIf="openIdConnectService.userAvailable"
+>
+  <mat-icon aria-label="Add Note">add_circle</mat-icon>
+</button>
+<ng-container *ngFor="let item of notes">
+  <app-note-tile [note]="item"></app-note-tile>
+</ng-container>

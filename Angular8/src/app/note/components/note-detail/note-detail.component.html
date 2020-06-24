@@ -1,0 +1,21 @@
+<div *ngIf="note">
+  <h1 class="mat-display-1">{{ note.title }}</h1>
+
+  <section>
+    <div class="mat-body-1 note-body" [innerHTML]="note.body"></div>
+  </section>
+
+  <div>
+    <span class="mat-subheading-2 username"
+      >added By {{ note.username }} at
+      {{ note.updateTime | date: "medium" }}</span
+    >
+    <a
+      mat-button
+      [routerLink]="['/note/note-edit', note.id]"
+      color="primary"
+      *ngIf="openIdConnectService.userAvailable"
+      >Edit</a
+    >
+  </div>
+</div>

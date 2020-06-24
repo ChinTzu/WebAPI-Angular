@@ -1,0 +1,34 @@
+<div *ngIf="note">
+  <form class="note-editor-form" [formGroup]="noteForm" (ngSubmit)="save()">
+    <mat-form-field class="note-editor-title">
+      <input matInput placeholder="Title" formControlName="title" />
+      <mat-error
+        *ngIf="
+          noteForm.controls.title.dirty &&
+          noteForm.controls.title.errors?.required
+        "
+      >
+        Please fill in the title.
+      </mat-error>
+    </mat-form-field>
+    <editor
+      apiKey="ei3plofo50c0t9rb92yityvng1z3k5yqh3pwthsp1vfecssl"
+      [init]="editorSettings"
+      formControlName="body"
+    ></editor>
+    <section *ngIf="noteForm.controls.body.dirty" class="body-error">
+      <p class="mat-caption" *ngIf="noteForm.controls.body.errors?.required">
+        Please fill in the body.
+      </p>
+    </section>
+    <button
+      type="submit"
+      mat-raised-button
+      color="primary"
+      class="submit-button"
+      [disabled]="!noteForm.valid || !noteForm.dirty"
+    >
+      Save
+    </button>
+  </form>
+</div>
